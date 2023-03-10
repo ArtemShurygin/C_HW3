@@ -12,11 +12,12 @@ for(int i = 1; i < 4; i++)
     Console.WriteLine("Введите координату x2 (" + i + ")");
     double x2 = Convert.ToDouble( Console.ReadLine());
     sum = sum + Math.Pow(x2 - x1, 2);
-    
+    /*
     Console.WriteLine("x1:" + x1);
     Console.WriteLine("x2:" + x2);
     Console.WriteLine("sum:" + sum);
+    */
     Console.WriteLine();
     }
 double dist = Math.Sqrt(sum);
-Console.WriteLine("Растояние между точками равно: " + dist + " у.е.");
+Console.WriteLine("Расстояние между точками равно: " + dist + " у.е.");
