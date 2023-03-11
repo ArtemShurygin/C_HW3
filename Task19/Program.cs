@@ -14,17 +14,14 @@ Palindrom5(num);
 void Palindrom5(int num)
     {
     int n = 10000;
-    int r_num = 0;
-    int l_num = 0;
-    int res = 0;
     int k = 0;
     if (num < 100000 & num > 9999)
         {
         for (int i = 1; i < 3; i++)
             {
-            res = num / n;
-            l_num = (res % 10);
-            r_num = (num % 10);
+            int res = num / n;
+            int l_num = (res % 10);
+            int r_num = (num % 10);
             if (l_num > r_num | l_num < r_num)
                 k = k + 1;
             /*
