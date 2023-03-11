@@ -6,13 +6,19 @@
 
 Console.WriteLine("Введите число:");
 int N = Convert.ToInt32( Console.ReadLine());
-if (N>0)
+Cube(N);
+
+void Cube(int N)
     {
-    for(int i = 1; i < N + 1; i++)
+    if (N>0)
         {
-        double cubeN = Math.Pow(i,3);
-        Console.Write(cubeN + "  ");
+        for(int i = 1; i < N + 1; i++)
+            {
+            double cubeN = Math.Pow(i,3);
+            Console.Write(cubeN + "  ");
+            }
+            Console.WriteLine();
         }
+    else
+    Console.WriteLine("Введенное число должно быть целым, положительным и больше 1");
     }
-else
-Console.WriteLine("Введенное число должно быть целым, положительным и больше 1");
